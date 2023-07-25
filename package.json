@@ -1,7 +1,7 @@
 {
   "homepage": "https://sharkavli.github.io/mesto-react/",
-  "name": "mesto-react",
-  "version": "0.1.0",
+  "name": "react-mesto-auth",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -42,5 +42,13 @@
   },
   "devDependencies": {
     "gh-pages": "^2.2.0"
-  }
+  },
+  "description": "Проект \"Место\"",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://sharkavli.github.io/react-mesto-auth/"
+  },
+  "author": "Michael Said",
+  "license": "ISC"
 }
