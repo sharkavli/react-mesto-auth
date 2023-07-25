@@ -21,14 +21,19 @@ export const Login = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const { password, email } = formValue;
-    auth.authorize(password, email).then((res) => {
-      if (res.token) {
-        navigate('/', { replace: true });
-        localStorage.setItem('jwt', res.token);
-        props.setEmail(email);
-        props.onLog(true);
-      }
-    });
+    auth
+      .authorize(password, email)
+      .then((res) => {
+        if (res.token) {
+          navigate('/', { replace: true });
+          localStorage.setItem('jwt', res.token);
+          props.setEmail(email);
+          props.onLog(true);
+        }
+      })
+      .catch((err) => {
+        console.log(`Ошибка! ${err}`);
+      });
   };
 
   return (

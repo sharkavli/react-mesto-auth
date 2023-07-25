@@ -36,7 +36,7 @@ function Card(props) {
       <img
         onClick={handleClick}
         src={props.card.link}
-        alt="Фото"
+        alt={props.card.name}
         className="element__photo"
       />
       <div className="element__panel">

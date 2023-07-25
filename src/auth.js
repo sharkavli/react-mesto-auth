@@ -44,6 +44,6 @@ export const getToken = (token) => {
       Authorization: `Bearer ${token}`,
     },
   })
-    .then((res) => res.json())
+    .then(checkResponse)
     .then((data) => data);
 };

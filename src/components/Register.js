@@ -33,15 +33,20 @@ export const Register = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const { password, email } = formValue;
-    auth.register(password, email).then((res) => {
-      if (res) {
-        handleShowSuccesTool();
-        navigate('/sign-in', { replace: true });
-      } else {
-        handleShowErrorTool();
-        console.log(res);
-      }
-    });
+    auth
+      .register(password, email)
+      .then((res) => {
+        if (res) {
+          handleShowSuccesTool();
+          navigate('/sign-in', { replace: true });
+        } else {
+          handleShowErrorTool();
+          console.log(res);
+        }
+      })
+      .catch((err) => {
+        console.log(`Ошибка! ${err}`);
+      });
   };
 
   return (

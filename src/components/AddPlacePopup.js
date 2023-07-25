@@ -20,6 +20,7 @@ function AddPlacePopup(props) {
       onSubmit={handleSubmit}
       onClose={props.onClose}
       isOpen={props.isOpen}
+      buttonText="Создать"
       name="Add"
       title="Новое место"
     >
@@ -47,9 +48,6 @@ function AddPlacePopup(props) {
         placeholder="Ссылка на картинку"
       />
       <span id="inputLink-error" className="popup__error-message"></span>
-      <button onSubmit={handleSubmit} type="submit" className="popup__save">
-        Создать
-      </button>
     </PopupWithForm>
   );
 }

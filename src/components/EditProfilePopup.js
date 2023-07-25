@@ -25,6 +25,7 @@ function EditProfilePopup(props) {
       isOpen={props.isOpen}
       name="Profile"
       title="Редактировать профиль"
+      buttonText="Создать"
     >
       <input
         value={name || ''}
@@ -50,9 +51,6 @@ function EditProfilePopup(props) {
         placeholder="Род деятельности"
       />
       <span id="inputLink-error" className="popup__error-message"></span>
-      <button type="submit" className="popup__save">
-        Создать
-      </button>
     </PopupWithForm>
   );
 }

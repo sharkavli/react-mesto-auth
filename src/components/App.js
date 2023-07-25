@@ -53,13 +53,18 @@ function App() {
     if (localStorage.getItem('jwt')) {
       const jwt = localStorage.getItem('jwt');
       if (jwt) {
-        auth.getToken(jwt).then((res) => {
-          if (res) {
-            setUserEmail(res.data.email);
-            setLoggedIn(true);
-            navigate('/', { replace: true });
-          }
-        });
+        auth
+          .getToken(jwt)
+          .then((res) => {
+            if (res) {
+              setUserEmail(res.data.email);
+              setLoggedIn(true);
+              navigate('/', { replace: true });
+            }
+          })
+          .catch((err) => {
+            console.log(`Ошибка! ${err}`);
+          });
       }
     }
   }
