@@ -1,0 +1,10 @@
+.info-window__container {
+  background-color: #ffff;
+  width: calc(1280px - 850px);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}

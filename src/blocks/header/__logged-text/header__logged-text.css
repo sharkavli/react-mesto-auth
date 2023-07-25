@@ -1,0 +1,5 @@
+.header__logged-text {
+  display: flex;
+  color: white;
+  gap: 24px;
+}

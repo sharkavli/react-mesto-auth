@@ -1,0 +1,12 @@
+.header__link-exit {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: right;
+  text-decoration: none;
+  color: #a9a9a9;
+  margin: 0;
+  cursor: pointer;
+}

@@ -1,0 +1,11 @@
+.sign-up__title {
+  margin: 0;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 50px;
+}
