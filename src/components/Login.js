@@ -25,7 +25,7 @@ export const Login = (props) => {
       .authorize(password, email)
       .then((res) => {
         if (res.token) {
-          navigate('/', { replace: true });
+          navigate('/react-mesto-auth', { replace: true });
           localStorage.setItem('jwt', res.token);
           props.setEmail(email);
           props.onLog(true);
