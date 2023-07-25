@@ -59,7 +59,7 @@ function App() {
             if (res) {
               setUserEmail(res.data.email);
               setLoggedIn(true);
-              navigate('/react-mesto-auth', { replace: true });
+              navigate('/', { replace: true });
             }
           })
           .catch((err) => {
@@ -169,7 +169,7 @@ function App() {
               />
               <Routes>
                 <Route
-                  path="/react-mesto-auth"
+                  path="/"
                   element={
                     <ProtectedRoute
                       isloadingPage={isloadingPage}
